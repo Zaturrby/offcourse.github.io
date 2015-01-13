@@ -1,107 +1,9 @@
-@viewport {
-  width:device-width;
-}
-
-* { padding: 0; margin: 0 }
-body {
-  height: 100%;
-  white-space: nowrap;
-  font-family: NB;
-  font-size: 34px;
-  letter-spacing: 1px;
-  width: 120em;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  bottom:0;}
-html { height: 100% }
-
-.green { background: #72C7B3 no-repeat top right;}
-.red { background: #E34B25 no-repeat top right;}
-.yellow { background: #E6D01E no-repeat top right;}
-
-
-.section{
-  margin:0px;
-    bottom:0px;
-    width: 40em;
-    float: left;
-    height:100%;
-}
-.section h1{
-    float:left;
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 0.1em;
-    font-size: 2.5em;
-    margin-top: 1em;
-    font-weight: bolder;
-    -webkit-filter: invert(100%);
-}
-.section h2{
-     float:left;
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 0.1em;
-    font-size: 1em;
-   font-weight: bolder;
-   margin-top: 0;
-    -webkit-filter: invert(100%);
-
-}
-.section p{
-    display: block;
-    background-color: black;
-    color:#fff;
-    padding: 0.1em;
-    font-size: 2em;
-    float:left;
-    height:1.4em;
-}
-
- .smallp{
-    display: block;
-    background-color: black;
-    color:#fff;
-    padding: 0.1em;
-    font-size: 1em;
-    float:left;
-    height:1.4em;
-    margin-bottom: 0.5em;
-}
-
-.smallh{
-  margin-top:2.5em;
-  font-size: 1em;
-}
-
-
-img{
-  float:left;
-  height:2em;
-  width:;
-}
-
-
-footer{
-  display: inline-block;
-  color: black;
-  position: fixed;
-  left:23em;
-  bottom:1em;
-  font-size:0.5em;
-
-}
-
 @font-face {
  font-family: NN;
  font-style: normal;
  font-weight: 900;
  src: url('../fonts/NN.woff')  format('woff');
  }
-
  @font-face{
   font-family: NB;
   font-style: bold;
@@ -110,39 +12,124 @@ footer{
  }
 
 
+html { height: 100%; width:100%; }
+body {
+  height: 100%;
+  font-family: NB;
+  letter-spacing: 1px;
+  width: 300%;
+  }
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  body{
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  body{
+    font-size: 26px;
+
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  body{
+    font-size: 36px;
+  }
+}
+
+
+.green { background: #72C7B3;}
+.red { background: #E34B25;}
+.yellow { background: #E6D01E ;}
+
+
+.section{
+    bottom:0px;
+    width: 33.33%;
+    float: left;
+    height:100%;
+    padding:2.5em;
+    }
+
+.section h1{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 0.1em;
+    font-size: 2.5em;
+    margin:0;
+    margin-bottom: 0.1em;
+    }
+
+.section .black {
+  color: white;
+  background-color: black;
+}
+
+.section h2{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 0.1em;
+    font-size: 1em;
+    margin:0;
+   }
+
+h1, h2, p{
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+.section p{
+    display: inline-block;
+    background-color: black;
+    color:#fff;
+    font-size: 1em;
+    height:1.4em;
+    margin-bottom: 5px;
+    }
+
+
+.annoying{
+    margin: 0 auto;
+    display:inline-block;
+}
 
 
 
-
-
-
-
+img{
+  display: block;
+  height:2em;}
 
 
 textarea{
+
     background: white;
     color: #cecaca;
-    width: 36em;
+    min-width: 16em;
+    max-width: 100%;
     height: 3em;
     display:block;
-    font-size:0.5em;
-    padding-left:20px;
-    padding-right:20px;
-    padding-top:12px;
-    margin-bottom:20px;
+    font-size: 1em;
+    margin-bottom: 5px;
     overflow:hidden;
+    padding-left: 5px;
 }
 
 input {
-    width: 26em;
-    height: 3em;
+    min-width: 16em;
+    max-width: 100%;
+    height: 1.5em;
     display:block;
-    font-size:0.5em;
+    font-size: 1em;
     color: #cecaca;
-    padding-left:20px;
-    padding-right:20px;
-    margin-bottom:20px;
+    margin-bottom:5px;
     background: white ;
+    clear:left;
+    padding-left: 5px;
 }
 
 input[type=submit] {
@@ -151,12 +138,13 @@ input[type=submit] {
 
 
 .btn {
-    width: 138px;
-    height: 44px;
-    background: black;
+    width: 3em;
+    height: 1.3em;
+    line-height:1;
+    background: white;
     border-color: white;
-    color: white;
-    font-size: 0.8em;
+    color: #72C7B3;
+    font-size: 1.2em;
 }
 
 .btn:hover {

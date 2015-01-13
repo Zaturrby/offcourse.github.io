@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +17,7 @@
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -23,54 +25,62 @@
 
 
     <div class="section yellow" id="section1">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2 col-md-offset-3">
-                    <h1>unacademic_</h1>
-                        <p>learning by </p>
-                        <p>dwelling</p>
-                        <a class="next" href="#section2"><img src="login8.svg"></a>
+                  <div class="col-md-7 col-md-offset-3 col-sm-5 col-sm-offset-2 col-xs-10 col-xs-offset-0" >
+                  <div class="annoying">
+                      <div>
+                            <h1>Unacademic_</h1>
+                      </div>
+                      <div>
+                            <h1 class="black">learn by </h1>
+                      </div>
+                      <div>
+                            <h1 class="black">doing</h1>
+                      </div>
+                      <a  href="#section2"><img src="arrow.png"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="section red" id="section2">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2 col-md-offset-3">
-                <a name="section2"></a>
-                <div class="smallh">
-                    <h2>The field of education</h2>
-                    <h2>is changing,</h2>
-                    </div>
-                        <div class="smallp">but alternatives are </div>
-                        <div class="smallp">often still modelled</div>
-                        <div class="smallp">after the traditional</div>
-                        <div class="smallp">classroom.</div>
-                        <a class="next" href="#section3"><img src="login8.svg"></a>
+                <div class="col-md-7 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0" >
+                    <div><h2>The field of education</h2></div>
+                        <div>
+                        <h2>is changing,</h2>
+                        </div>
+
+                        <div><p>but new alternatives are</p> </div>
+                        <div><p>often still modelled</p></div>
+                        <div><p>after the traditional</p></div>
+                        <div><p>classroom.</p></div>
+                        <a class="next" href="#section3"><img src="arrow.png"></a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="section green" id="section3">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-2 col-md-offset-3">
+                  <div class="col-md-7 col-md-offset-3 col-sm-5 col-sm-offset-2 col-xs-12 col-xs-offset-0" >
                 <a name="section3"></a>
                 <div class="smallh">
-                    <h2>We are changing that!</h2>
+                    <h2>we're changing that!</h2>
                     </div>
-                        <div class="smallp">Do you want to be</div>
-                        <div class="smallp">part of it?</div>
+                        <div><p>do you want to be a</p></div>
+                        <div><p>part of it?</p></div>
 
 
                   <form id="form">
-                      <input name="name" placeholder="Enter your name here" class="name" required />
-                      <input name="emailaddress" placeholder="Enter your email here" class="email" type="email" required />
-                      <textarea rows="4" cols="50" name="subject" placeholder="Enter your message here" class="message" required></textarea>
-                      <input name="submit" class="btn" type="submit" value="Send" />
+                      <input name="name" placeholder="enter your name here" class="name" required />
+                      <input name="emailaddress" placeholder="enter your email here" class="email" type="email" required />
+                      <textarea  name="subject" placeholder="enter your message here" class="message" required></textarea>
+                      <button class="btn" type="submit">send</button>
                   </form>
 
 
@@ -80,17 +90,15 @@
     </div>
 
 
-    <footer>
-    <p>Copyright &copy; unacademic 2015</p>
-    </footer>
-
 
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+    <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+
         <script type="text/javascript">
             $(function() {
                 $('ul.nav a').bind('click',function(event){
