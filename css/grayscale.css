@@ -115,7 +115,8 @@ textarea{
     font-size: 0.7em;
     margin-bottom: 5px;
     overflow:hidden;
-    padding-left: 10px;
+    padding-left: 0.3em;
+    
 }
 
 input {
@@ -128,7 +129,7 @@ input {
     margin-bottom:5px;
     background: white ;
     clear:left;
-    padding-left: 10px;
+    padding-left: 0.3em;
 }
 
 input[type=submit] {
@@ -137,13 +138,12 @@ input[type=submit] {
 
 
 .btn {
-    width: 3em;
-    height: 1.3em;
-    line-height:1;
     background: white;
     border-color: white;
     color: #72C7B3;
     font-size: 1em;
+    line-height: 1em;
+    border-radius: 0;
 }
 
 .btn:hover {
