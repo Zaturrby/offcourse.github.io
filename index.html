@@ -102,15 +102,18 @@
 
           <script>
             var myDataRef = new Firebase('https://unacademic.firebaseio.com/');
-            $('#messageInput').keypress(function (e) {
-            if (e.keyCode == 13) {
-              var name = $('.name').val();
-              var email = $('.email').val();
-              var text = $('.message').val();
-              myDataRef.push({'name': name, 'email': email, 'text': text});
-              $('#messageInput').val('');
+			function storeDetails() {
+				console.log('submitting');
+                var name = $('.name').val();
+                var email = $('.email').val();
+                var text = $('.message').val();
+				console.log(name);
+                myDataRef.push({'name': name, 'email': email, 'text': text});
               }
-            });
+
+			  var submit = document.getElementsByTagName('button')[0];
+
+			submit.onclick = storeDetails;
           </script>
 
 
